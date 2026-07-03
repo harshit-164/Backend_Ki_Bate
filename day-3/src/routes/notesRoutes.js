@@ -20,7 +20,7 @@ router.delete('/:index', (req, res) => {
 });
 
 router.patch('/:index', (req, res) => {
-    notes[req.params.index];
+    notes[req.params.index].content = req.body.content;
     res.send('notes updated');
 });
 
