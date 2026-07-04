@@ -1,0 +1,868 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+/* ==========================
+   RESET
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+  background: #bcc4ff;
+  overflow-x: hidden;
+}
+
+/* ==========================
+   APP
+========================== */
+
+.app {
+  min-height: 100vh;
+  padding: 25px;
+  position: relative;
+}
+
+/* ==========================
+   FLOATING CIRCLES
+========================== */
+
+.circle {
+  position: fixed;
+  border: 3px solid #000;
+  border-radius: 50%;
+  z-index: -1;
+
+  box-shadow: 8px 8px 0 #000;
+}
+
+.circle1 {
+  width: 170px;
+  height: 170px;
+
+  background: #9097ff;
+
+  top: -70px;
+  left: -60px;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+
+  background: #ffcb7d;
+
+  right: 40px;
+  top: 170px;
+}
+
+.circle3 {
+  width: 240px;
+  height: 240px;
+
+  background: #8de7ff;
+
+  left: -120px;
+  bottom: -90px;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+  height: 78px;
+
+  background: #f8f8ff;
+
+  border: 3px solid #000;
+
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 #000;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 30px;
+
+  margin-bottom: 30px;
+}
+
+/* ==========================
+   LOGO
+========================== */
+
+.logo {
+  font-size: 28px;
+
+  font-weight: 800;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* ==========================
+   SEARCH
+========================== */
+
+.search {
+  width: 420px;
+
+  padding: 14px 22px;
+
+  border: 3px solid black;
+
+  border-radius: 30px;
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: white;
+
+  transition: 0.2s;
+}
+
+.search:focus {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 6px 6px 0 black;
+}
+
+/* ==========================
+   NAV ICONS
+========================== */
+
+.nav-icons {
+  display: flex;
+
+  gap: 16px;
+}
+
+.nav-icons button {
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 50%;
+
+  border: 3px solid black;
+
+  background: white;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  transition: 0.18s;
+}
+
+.nav-icons button:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 10px 10px 0 black;
+}
+
+/* ==========================
+   MAIN LAYOUT
+========================== */
+
+.main-layout {
+  display: grid;
+
+  grid-template-columns: 280px 1fr;
+
+  gap: 28px;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar {
+  background: #f8f8ff;
+
+  border: 3px solid black;
+
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 black;
+
+  padding: 25px;
+
+  height: calc(100vh - 140px);
+
+  position: sticky;
+
+  top: 25px;
+}
+
+/* ==========================
+   SIDEBAR TITLE
+========================== */
+
+.sidebar h2 {
+  margin-bottom: 25px;
+
+  font-size: 28px;
+}
+
+/* ==========================
+   SIDEBAR BUTTONS
+========================== */
+
+.sidebar button {
+  width: 100%;
+
+  margin-bottom: 14px;
+
+  padding: 15px;
+
+  border: 3px solid black;
+
+  background: white;
+
+  border-radius: 14px;
+
+  text-align: left;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  box-shadow: 5px 5px 0 black;
+
+  transition: 0.18s;
+}
+
+.sidebar button:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 9px 9px 0 black;
+}
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+.stats {
+  margin-top: 35px;
+
+  padding: 20px;
+
+  border-radius: 18px;
+
+  background: #ffd76d;
+
+  border: 3px solid black;
+
+  box-shadow: 6px 6px 0 black;
+}
+
+.stats h3 {
+  margin-bottom: 18px;
+}
+
+.stats p {
+  margin-bottom: 12px;
+
+  font-weight: 600;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.content {
+  display: flex;
+
+  flex-direction: column;
+}
+
+/* ==========================
+   CREATE NOTE
+========================== */
+
+.note-form {
+  background: #f8f8ff;
+
+  border: 3px solid black;
+
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 black;
+
+  padding: 22px;
+
+  display: flex;
+
+  gap: 18px;
+
+  margin-bottom: 35px;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.note-form input {
+  flex: 1;
+
+  padding: 16px;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.note-form input:focus {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 6px 6px 0 black;
+}
+
+/* ==========================
+   ADD BUTTON
+========================== */
+
+.note-form button {
+  width: 190px;
+
+  border: none;
+
+  background: #7ae8a5;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  transition: 0.18s;
+}
+
+.note-form button:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 10px 10px 0 black;
+}
+
+.note-form button:active {
+  transform: translate(4px, 4px);
+
+  box-shadow: none;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1100px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+
+    height: auto;
+  }
+
+  .search {
+    width: 260px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+
+    height: auto;
+
+    gap: 18px;
+
+    padding: 20px;
+  }
+
+  .note-form {
+    flex-direction: column;
+  }
+
+  .search {
+    width: 100%;
+  }
+}
+/* =====================================
+   NOTES GRID
+===================================== */
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+/* =====================================
+   NOTE CARD
+===================================== */
+
+.note {
+  min-height: 240px;
+
+  padding: 22px;
+
+  border: 3px solid #000;
+
+  border-radius: 22px;
+
+  box-shadow: 8px 8px 0 #000;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  transition: 0.18s;
+
+  cursor: pointer;
+}
+
+.note:hover {
+  transform: translate(-8px, -8px);
+
+  box-shadow: 16px 16px 0 #000;
+}
+
+/* =====================================
+   CARD COLORS
+===================================== */
+
+.note.yellow {
+  background: #ffe66d;
+}
+
+.note.mint {
+  background: #b8ffd6;
+}
+
+.note.peach {
+  background: #ffd1ba;
+}
+
+.note.lavender {
+  background: #d8c8ff;
+}
+
+.note.sky {
+  background: #bce8ff;
+}
+
+/* =====================================
+   NOTE HEADER
+===================================== */
+
+.note-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+.note-header h2 {
+  font-size: 24px;
+
+  font-weight: 800;
+
+  word-break: break-word;
+}
+
+.emoji {
+  width: 52px;
+
+  height: 52px;
+
+  border-radius: 14px;
+
+  border: 3px solid black;
+
+  background: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 24px;
+
+  box-shadow: 5px 5px 0 black;
+}
+
+/* =====================================
+   DESCRIPTION
+===================================== */
+
+.note p {
+  flex: 1;
+
+  margin-bottom: 22px;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+
+  color: #222;
+
+  word-break: break-word;
+}
+
+/* =====================================
+   ACTION BUTTONS
+===================================== */
+
+.actions {
+  display: flex;
+
+  gap: 14px;
+}
+
+.actions button {
+  flex: 1;
+
+  padding: 13px;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  transition: 0.15s;
+}
+
+.actions button:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 10px 10px 0 black;
+}
+
+.actions button:active {
+  transform: translate(4px, 4px);
+
+  box-shadow: none;
+}
+
+/* =====================================
+   BUTTON COLORS
+===================================== */
+
+.update-btn {
+  background: #7ae8a5;
+}
+
+.delete-btn {
+  background: #ff8c8c;
+}
+
+/* =====================================
+   FLOATING ADD BUTTON
+===================================== */
+
+.floating-btn {
+  position: fixed;
+
+  right: 35px;
+
+  bottom: 35px;
+
+  width: 78px;
+
+  height: 78px;
+
+  border-radius: 50%;
+
+  border: 3px solid black;
+
+  background: #ffd84f;
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 8px 8px 0 black;
+
+  transition: 0.18s;
+
+  z-index: 50;
+}
+
+.floating-btn:hover {
+  transform: translate(-6px, -6px) rotate(12deg);
+
+  box-shadow: 14px 14px 0 black;
+}
+
+.floating-btn:active {
+  transform: translate(5px, 5px);
+
+  box-shadow: none;
+}
+
+/* =====================================
+   POPUP
+===================================== */
+
+.popup-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+
+  backdrop-filter: blur(4px);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  z-index: 999;
+}
+
+.popup-box {
+  width: 520px;
+
+  background: #fff8d8;
+
+  border: 4px solid black;
+
+  border-radius: 24px;
+
+  padding: 30px;
+
+  box-shadow: 14px 14px 0 black;
+}
+
+.popup-box h2 {
+  margin-bottom: 22px;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+.popup-box form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+/* =====================================
+   POPUP INPUTS
+===================================== */
+
+.popup-box input,
+.popup-box textarea {
+  width: 100%;
+
+  padding: 16px;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  resize: none;
+
+  font-family: inherit;
+
+  transition: 0.15s;
+}
+
+.popup-box input:focus,
+.popup-box textarea:focus {
+  transform: translate(-3px, -3px);
+
+  box-shadow: 6px 6px 0 black;
+}
+
+/* =====================================
+   POPUP BUTTONS
+===================================== */
+
+.popup-box form button {
+  padding: 16px;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  background: #82e8ff;
+
+  font-size: 17px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  transition: 0.15s;
+}
+
+.popup-box form button:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 10px 10px 0 black;
+}
+
+.popup-box form button:active {
+  transform: translate(4px, 4px);
+
+  box-shadow: none;
+}
+
+.close-btn {
+  margin-top: 18px;
+
+  width: 100%;
+
+  padding: 16px;
+
+  border: 3px solid black;
+
+  border-radius: 14px;
+
+  background: #ff8c8c;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 6px 6px 0 black;
+
+  transition: 0.15s;
+}
+
+.close-btn:hover {
+  transform: translate(-4px, -4px);
+
+  box-shadow: 10px 10px 0 black;
+}
+
+.close-btn:active {
+  transform: translate(4px, 4px);
+
+  box-shadow: none;
+}
+
+/* =====================================
+   SCROLLBAR
+===================================== */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #bcc4ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+
+  border-radius: 20px;
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 650px) {
+  .notes {
+    grid-template-columns: 1fr;
+  }
+
+  .popup-box {
+    width: 92%;
+  }
+
+  .note {
+    min-height: 220px;
+  }
+
+  .floating-btn {
+    right: 20px;
+
+    bottom: 20px;
+
+    width: 68px;
+
+    height: 68px;
+
+    font-size: 34px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
